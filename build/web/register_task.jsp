@@ -1,10 +1,8 @@
 <%@page import="com.testjsp.dao.UserDAO"%>
 <%@page import="com.testjsp.model.User"%>
+<jsp:useBean id="user" class="com.testjsp.model.User" scope="request"></jsp:useBean>
+<jsp:setProperty name="user" property="*"></jsp:setProperty>
 <%
-  String username =  request.getParameter("username");
-  String password = request.getParameter("password");
-  String mobile = request.getParameter("mobile");
-  User user = new User(username, password, mobile);
   boolean status = UserDAO.save(user);
   if(status){
    %>

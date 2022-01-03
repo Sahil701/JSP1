@@ -12,6 +12,7 @@
 </head>
 <body>
 <%@include file="_header.jsp" %>  
+
 <div class="container">
     <form method="post" action="register_task.jsp">
         <div class="form-group">

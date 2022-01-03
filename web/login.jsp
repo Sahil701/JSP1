@@ -13,7 +13,7 @@
 <body>
 <%@include file="_header.jsp" %>  
 <div class="container">
-    <form>
+    <form action="login_task.jsp" method="post">
         <div class="form-group">
             <label>Username</label>
             <input type="text" name="username" class="form-control"/>
