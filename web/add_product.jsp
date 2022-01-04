@@ -16,10 +16,10 @@
     <body>
         <%@include file="_header.jsp" %>
         <div class="container">
-            <form>
+            <form method="post" action="add_product_task.jsp" enctype="multipart/form-data">
                 <div class="form-group">
                     <label>Category</label>
-                    <select class="form-control">
+                    <select name="categoryId" class="form-control">
                         <option value="0">Select category</option>
                         <%
                            ArrayList<Category>al = CategoryDAO.getCategoryList();

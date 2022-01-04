@@ -1,21 +1,27 @@
 package com.testjsp.model;
 public class Product {
   private int id;
-  private String name;
+  private String productName;
   private float price;
   private String description;
+  private int categoryId;
+  private String productImage;
 
-    public Product(int id, String name, float price, String description) {
+    public Product(int id, String productName, float price, String description, int categoryId, String productImage) {
         this.id = id;
-        this.name = name;
+        this.productName = productName;
         this.price = price;
         this.description = description;
+        this.categoryId = categoryId;
+        this.productImage = productImage;
     }
 
-    public Product(String name, float price, String description) {
-        this.name = name;
+    public Product(String productName, float price, String description, int categoryId, String productImage) {
+        this.productName = productName;
         this.price = price;
         this.description = description;
+        this.categoryId = categoryId;
+        this.productImage = productImage;
     }
 
     public Product() {
@@ -29,12 +35,12 @@ public class Product {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
     public float getPrice() {
@@ -52,5 +58,21 @@ public class Product {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public int getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public String getProductImage() {
+        return productImage;
+    }
+
+    public void setProductImage(String productImage) {
+        this.productImage = productImage;
+    }
    
-}
+} 
