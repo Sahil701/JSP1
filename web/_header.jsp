@@ -15,8 +15,8 @@
     <ul class="nav navbar-nav">
       <%if(currentUser!=null){%>
        <li><a href="add_product.jsp">Add product</a></li>
-       <li><a href="#">Product list</a></li>
-       <li><a href="#">Logout</a></li>
+       <li><a href="product_list.jsp">Product list</a></li>
+       <li><a href="logout.jsp">Logout</a></li>
       <%}else{%>
         <li class="active"><a href="login.jsp">Login</a></li>
         <li><a href="register.jsp">Register</a></li> 

@@ -6,7 +6,16 @@ public class Product {
   private String description;
   private int categoryId;
   private String productImage;
+  private String categoryName;
 
+    public String getCategoryName() {
+        return categoryName;
+    }
+
+    public void setCategoryName(String categoryName) {
+        this.categoryName = categoryName;
+    }
+  
     public Product(int id, String productName, float price, String description, int categoryId, String productImage) {
         this.id = id;
         this.productName = productName;
